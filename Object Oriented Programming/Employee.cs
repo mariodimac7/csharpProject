@@ -10,16 +10,18 @@ namespace Object_Oriented_Programming
     {
         //attributes
         public double Salary { get; set; }
+        public int Age { get; set; }
 
         public Employee()
         {
 
         }
 
-        public Employee(string name, int phone, string email, double salary)
-            :base(name, phone, email)
+        public Employee(string fname, string lname, string phone, string email, Address address, double salary, int age)
+            :base(fname, lname, phone, email, address)
         {
             Salary = salary;
+            Age = Age;
         }
 
     }
